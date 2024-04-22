@@ -1,0 +1,111 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-image: url(TIC\ TAC\ TOE\ 3.jpg);
+    /* background-repeat: repeat-x; */
+    background-position: center;
+    background-size: contain;
+    text-align: center;
+}
+h1{
+    margin-top: 50px;
+    font-size: 50px ;
+    font-family:Papyrus;
+    
+}
+.container{
+    /* height:70vh; */
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+}
+
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.3);
+    font-size: 8vmin;
+    color: #b0413e;
+}
+
+#reset-btn{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+    margin-top: 40px;
+}
+
+#new-btn{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+}
+
+#msg{
+   color: #ffffc7;
+   font-size: 6vmin;
+}
+
+.msg-container{
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.hide{
+    display: none;
+}
+
+.search-select{
+    justify-content: last baseline;
+}
+
+.icon {
+    font-family: 'Font Awesome 5 Free';
+}
+
+.container {
+    top: 10px;
+    right: 10px;
+}
+
+.icon-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    top: 40px; 
+    right: 40px; 
+}
+
+.icon-button:hover #icon {
+    color: rgb(89, 46, 35); 
+}
+#icon {
+    font-size: 32px; 
+}

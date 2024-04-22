@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="import" href="C:\Users\darsh\OneDrive\Desktop\TicTacToePro\index2.html">
+    <link rel="icon" type="image/png" href="tictac3favicon.png">
+
+</head>
+<body>
+    <div class="msg-container hide">
+        <p id="msg">Winner</p>
+        <button id="new-btn">New Game</button>
+    </div>
+    <main>
+        <h1><b>Tic Tac Toe</b></h1>
+        <audio id="background-music" autoplay >
+            <source src="music.ogg" type="audio/ogg">
+            <source src="music.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>          
+        <div class="container">
+            <button class="icon-button" id="icon-btn">
+                <i id="icon" class="fas fa-volume-up"></i>
+            </button>
+        </div>
+        <div class="container">
+            <div class="game">
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+            </div>
+        </div>
+        <button id="reset-btn">Reset Game</button>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
