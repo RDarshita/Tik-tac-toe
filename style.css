@@ -1,22 +1,24 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-body{
+body {
     background-image: url(TIC\ TAC\ TOE\ 3.jpg);
     /* background-repeat: repeat-x; */
     background-position: center;
     background-size: contain;
     text-align: center;
 }
-h1{
+
+h1 {
     margin-top: 50px;
-    font-size: 50px ;
-    font-family:Papyrus;
-    
+    font-size: 50px;
+    font-family: Papyrus;
+
 }
-.container{
+
+.container {
     /* height:70vh; */
     display: flex;
     /* flex-wrap: wrap; */
@@ -24,9 +26,10 @@ h1{
     align-items: center;
 }
 
-.game{
+.game {
     height: 60vmin;
     width: 60vmin;
+    margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -34,27 +37,28 @@ h1{
     gap: 1.5vmin;
 }
 
-.box{
+.box {
     height: 18vmin;
     width: 18vmin;
     border-radius: 1rem;
     border: none;
-    box-shadow: 0 0 1rem rgba(0,0,0,0.3);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
     font-size: 8vmin;
     color: #b0413e;
 }
 
-#reset-btn{
+#reset-btn {
     padding: 1rem;
     font-size: 1.25rem;
     background-color: #191913;
     color: #fff;
     border-radius: 1rem;
     border: none;
-    margin-top: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-#new-btn{
+#new-btn {
     padding: 1rem;
     font-size: 1.25rem;
     background-color: #191913;
@@ -63,12 +67,12 @@ h1{
     border: none;
 }
 
-#msg{
-   color: #ffffc7;
-   font-size: 6vmin;
+#msg {
+    color: #ffffc7;
+    font-size: 6vmin;
 }
 
-.msg-container{
+.msg-container {
     height: 100vmin;
     display: flex;
     justify-content: center;
@@ -77,11 +81,11 @@ h1{
     gap: 4rem;
 }
 
-.hide{
+.hide {
     display: none;
 }
 
-.search-select{
+.search-select {
     justify-content: last baseline;
 }
 
@@ -99,13 +103,106 @@ h1{
     border: none;
     cursor: pointer;
     position: fixed;
-    top: 40px; 
-    right: 40px; 
+    top: 40px;
+    right: 40px;
 }
 
 .icon-button:hover #icon {
-    color: rgb(89, 46, 35); 
+    color: rgb(89, 46, 35);
 }
+
 #icon {
-    font-size: 32px; 
+    font-size: 32px;
+}
+
+
+.player {
+    padding: 0.60rem;
+    font-size: 1rem;
+    background-color: rgb(14, 13, 13, 0.6);
+    color: white;
+    border-radius: 0.5rem;
+    border: none;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    width: 16rem;
+}
+
+.player::placeholder {
+    color: white;
+
+}
+
+
+
+@media (max-width: 400px) {
+
+    h1 {
+        font-size: 35px;
+    }
+
+    .player {
+        padding: 0.60rem;
+        font-size: 0.8rem;
+        background-color: rgb(14, 13, 13, 0.6);
+        color: #fff;
+        border-radius: 8px;
+        border: none;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        width: 12rem;
+        height: 1.2rem;
+    }
+
+    .player::placeholder {
+        color: white;
+    }
+
+    #reset-btn {
+
+        padding: 1rem;
+        font-size: 1rem;
+        background-color: #191913;
+        color: #fff;
+        border-radius: 1rem;
+        border: none;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #new-btn {
+        padding: 1rem;
+        font-size: 0.9rem;
+        background-color: #191913;
+        color: #fff;
+        border-radius: 1rem;
+        border: none;
+    }
+
+    #msg {
+        color: #ffffc7;
+        font-size: 7vmin;
+        margin-top: 25px;
+        font-weight: bold;
+    }
+
+    .game {
+        margin-top: 25px;
+        height: 60vmin;
+        width: 60vmin;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5vmin;
+    }
+
+    .icon-button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        position: fixed;
+        top: 40px; 
+        right: 20px; 
+    }
 }
